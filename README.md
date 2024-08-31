@@ -1,6 +1,6 @@
 # FastAPI Demo
 
-Demo of FastAPI for the [Software Engineering 2023](https://linliulab.github.io/SE-2023/) course.
+Demo of FastAPI for the [Software Engineering 2024](https://linliulab.github.io/SE-2024/) course.
 
 ## Pre-requisites
 
