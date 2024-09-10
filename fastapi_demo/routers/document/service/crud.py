@@ -26,7 +26,7 @@ def get_document(document_id: int):
         db_document = db.query(models.Document).filter_by(id=document_id).first()
         if not db_document:
             return {"message": "Document not found."}
-        return {"message": "Document retrieved successfully.", "data": db_document}
+        return {"message": "Document retrieved successfully.", "documents": db_document}
     except Exception as e:
         return {"message": f"Error: {e}"}
 
@@ -35,7 +35,7 @@ def get_all_documents():
     """Get all documents."""
     try:
         db_documents = db.query(models.Document).all()
-        return {"message": "Documents retrieved successfully.", "data": db_documents}
+        return {"message": "Documents retrieved successfully.", "documents": db_documents}
     except Exception as e:
         return {"message": f"Error: {e}"}
 

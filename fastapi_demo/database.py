@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # define the database connection string
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:root1234@localhost/fastapi_demo"
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:root@localhost/fastapi_demo"
 
 # create the database engine
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
